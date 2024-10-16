@@ -12,9 +12,16 @@
 <body>
     <div id="content">
         <h1>PlayerVPN | Proxy</h1>
-        <form id="uv-form">
-            <input id="uv-address" type="text" placeholder="Fly away, search privately..." class="form__input"/>
+        <form id="uv-form" action="https://www.google.com/search" method="get">
+            <input id="uv-search-engine" name="q" value="%s" type="hidden"/> 
+            <input id="uv-address" name="q" type="text" placeholder="Fly away, search privately..." class="form__input" />
         </form>
     </div>
+    <script src="uv/uv.bundle.js" defer></script>
+    <script src="uv/uv.config.js" defer></script>
+    <script src="register-sw.js" defer></script>
+    <script src="search.js" defer></script>
+    <script src="index.js" defer></script>
+    <script src="error.js" defer></script>
 </body>
 </html>
